@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\FIAP PROJ\\FCG_USERSAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FIAP PROJ\\FCG_USERSAPI\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\fcg_usersapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -93,13 +93,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AuthorizationController.cs",
               "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Controllers\\AuthorizationController.cs",
               "RelativeDocumentMoniker": "FCG_USERSAPI\\Controllers\\AuthorizationController.cs",
               "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Controllers\\AuthorizationController.cs",
               "RelativeToolTip": "FCG_USERSAPI\\Controllers\\AuthorizationController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAawBAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-22T02:38:59.491Z",
               "EditorCaption": ""
@@ -132,12 +132,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Program.cs",
               "RelativeDocumentMoniker": "FCG_USERSAPI\\Program.cs",
-              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Program.cs*",
-              "RelativeToolTip": "FCG_USERSAPI\\Program.cs*",
+              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Program.cs",
+              "RelativeToolTip": "FCG_USERSAPI\\Program.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-20T04:32:40.521Z",
