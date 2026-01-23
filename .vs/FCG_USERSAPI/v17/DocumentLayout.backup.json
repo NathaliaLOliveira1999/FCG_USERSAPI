@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "C:\\FIAP PROJ\\FCG_USERSAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\fcg_usersapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\fcg_usersapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FIAP PROJ\\FCG_USERSAPI\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|c:\\fiap proj\\fcg_usersapi\\fcg_usersapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{930DC9F7-B38A-491C-95BD-116888AAE124}|FCG_USERSAPI\\FCG_USERSAPI.csproj|solutionrelative:fcg_usersapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,12 +51,116 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "FCG_USERSAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "FCG_USERSAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwCsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T03:44:30.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "FCG_USERSAPI\\Models\\Client.cs",
+              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Models\\Client.cs",
+              "RelativeToolTip": "FCG_USERSAPI\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T03:40:12.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FCG_USERSAPI",
+              "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\FCG_USERSAPI.csproj",
+              "RelativeDocumentMoniker": "FCG_USERSAPI\\FCG_USERSAPI.csproj",
+              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\FCG_USERSAPI.csproj",
+              "RelativeToolTip": "FCG_USERSAPI\\FCG_USERSAPI.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-22T03:40:52.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthorizationController.cs",
+              "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Controllers\\AuthorizationController.cs",
+              "RelativeDocumentMoniker": "FCG_USERSAPI\\Controllers\\AuthorizationController.cs",
+              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Controllers\\AuthorizationController.cs",
+              "RelativeToolTip": "FCG_USERSAPI\\Controllers\\AuthorizationController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAawBAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T02:38:59.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-20T04:40:20.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "FCG_USERSAPI\\appsettings.json",
+              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\appsettings.json",
+              "RelativeToolTip": "FCG_USERSAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-20T04:34:39.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Program.cs",
+              "RelativeDocumentMoniker": "FCG_USERSAPI\\Program.cs",
+              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Program.cs",
+              "RelativeToolTip": "FCG_USERSAPI\\Program.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T04:32:40.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "FCG_USERSAPI\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "FCG_USERSAPI\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-19T01:05:20.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ClientController.cs",
               "DocumentMoniker": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Controllers\\ClientController.cs",
               "RelativeDocumentMoniker": "FCG_USERSAPI\\Controllers\\ClientController.cs",
               "ToolTip": "C:\\FIAP PROJ\\FCG_USERSAPI\\FCG_USERSAPI\\Controllers\\ClientController.cs",
               "RelativeToolTip": "FCG_USERSAPI\\Controllers\\ClientController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-17T19:38:12.255Z",
               "EditorCaption": ""
