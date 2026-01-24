@@ -41,6 +41,7 @@ namespace FCG_USERSAPI.Controllers
             return Ok(user);
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult Create(UserDto user)
         {
