@@ -48,7 +48,7 @@ namespace FCG_USERSAPI.Controllers
                 return BadRequest("Preencha as informações do usuário!");
             var retorno = _userService.Add(user, user.IdClient);
             if (retorno.Success)
-                return Ok();
+                return Ok(user);
             else return BadRequest(retorno.Error);
         }
     }
