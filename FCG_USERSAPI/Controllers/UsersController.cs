@@ -1,6 +1,5 @@
 using FCG_USERSAPI.Interfaces.Services;
 using FCG_USERSAPI.Models.DTO;
-using FCG_USERSAPI.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
