@@ -14,9 +14,13 @@ namespace FCG_USERSAPI.Models
             CreateMap<UserDto, User>()
                     .ForMember(dest => dest.IdUser, opt => opt.Ignore());
 
+            CreateMap<AccessProfileDto, AccessProfile>()
+                    .ForMember(dest => dest.IdAccessProfile, opt => opt.Ignore());
+
             // (opcional) Entidade -> DTO
             CreateMap<Client, ClientDto>();
             CreateMap<User, UserDto>();
+            CreateMap<AccessProfile, AccessProfileDto>();
         }
     }
 }

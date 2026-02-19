@@ -8,12 +8,14 @@ namespace FCG_USERSAPI.Models
 
         public DbSet<Client> Clients { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<AccessProfile> AccessProfiles { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Client>().HasKey(c => c.IdClient);
             modelBuilder.Entity<User>().HasKey(g => g.IdUser);
+            modelBuilder.Entity<AccessProfile>().HasKey(g => g.IdAccessProfile);
 
             base.OnModelCreating(modelBuilder);
         }
