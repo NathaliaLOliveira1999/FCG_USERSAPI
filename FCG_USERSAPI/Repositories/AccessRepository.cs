@@ -16,13 +16,6 @@ namespace FCG_USERSAPI.Repositories
 
         public Access? GetById(int id) => _context.Accesses.Find(id);
 
-        //public IEnumerable<Profile> GetListByEmail(string email)
-        //{
-        //    var result = _context.Profiles.Where(x => x.Email == email.ToLower()).ToList();
-
-        //    return result ?? Enumerable.Empty<Profile>();
-        //}
-
         public ServiceResult Add(Access access)
         {
             try
@@ -35,6 +28,51 @@ namespace FCG_USERSAPI.Repositories
             catch (Exception ex)
             {
                 return ServiceResult.Fail("Erro ao inserir access: " + ex.Message);
+            }
+        }
+
+        public ServiceResult Update(Access access)
+        {
+            try
+            {
+                var accessUpd = _context.Accesses.Find(access.IdAccess);
+                if (accessUpd == null)
+                {
+                    return ServiceResult.Fail("Accesso não identificado não encontrado!");
+                }
+
+                accessUpd.Name = access.Name;
+                accessUpd.Endpoint = access.Endpoint;
+                accessUpd.IdAccessType = access.IdAccessType;
+                accessUpd.IsActive = access.IsActive;
+                accessUpd.DtLastUpdate = DateTime.Now;
+                accessUpd.IdUserLastUpdate = access.IdUserLastUpdate;
+                _context.Accesses.Update(accessUpd);
+                _context.SaveChanges();
+                return ServiceResult.Ok(accessUpd);
+            }
+            catch (Exception ex)
+            {
+                return ServiceResult.Fail("Erro ao atualizar acessos: " + ex.Message);
+            }
+        }
+
+        public ServiceResult Delete(int id)
+        {
+            try
+            {
+                var access = _context.Accesses.FirstOrDefault(x => x.IdAccess == id);
+                if (access == null)
+                {
+                    return ServiceResult.Fail("Acesso não identificado não encontrado!");
+                }
+                _context.Accesses.Remove(access);
+                _context.SaveChanges();
+                return ServiceResult.Ok();
+            }
+            catch (Exception ex)
+            {
+                return ServiceResult.Fail("Erro ao remover acesso: " + ex.Message);
             }
         }
     }

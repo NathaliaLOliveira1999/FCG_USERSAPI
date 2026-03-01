@@ -31,5 +31,13 @@ namespace FCG_USERSAPI.Models
         [Column("DTCREATE")]
         [Required]
         public DateTime DtCreate { get; set; }
+
+        [Column("DTLASTUPDATE")]
+        [Required]
+        public DateTime DtLastUpdate { get; set; }
+
+        [Column("IDUSERLASTUPDATE")]
+        [Required]
+        public int IdUserLastUpdate { get; set; }
     }
 }

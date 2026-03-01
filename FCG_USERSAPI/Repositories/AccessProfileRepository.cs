@@ -43,7 +43,7 @@ namespace FCG_USERSAPI.Repositories
                 accessProfile.Name = profile.Name;
                 accessProfile.Description = profile.Description;
                 accessProfile.DtLastUpdate = DateTime.Now;
-                accessProfile.IdUserLastUpdate = accessProfile.IdUserLastUpdate;
+                accessProfile.IdUserLastUpdate = profile.IdUserLastUpdate;
                 _context.AccessProfiles.Update(accessProfile);
                 _context.SaveChanges();
                 return ServiceResult.Ok(accessProfile);
