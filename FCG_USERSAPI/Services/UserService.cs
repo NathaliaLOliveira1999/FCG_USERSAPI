@@ -3,7 +3,6 @@ using FCG_USERSAPI.Interfaces.Repositories;
 using FCG_USERSAPI.Interfaces.Services;
 using FCG_USERSAPI.Models;
 using FCG_USERSAPI.Models.DTO;
-using FCG_USERSAPI.Repositories;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -69,6 +68,26 @@ namespace FCG_USERSAPI.Services
             {
                 return ServiceResult.Fail(ex.Message);
             }
+        }
+        public ServiceResult Update(UserDto user)
+        {
+            user.UserName = user.UserName.ToUpper();
+            var existing = _userRepository.GetListByUser(user.UserName).ToList();
+            if (existing.Count() > 0)
+                return ServiceResult.Fail("Usuário já existe!");
+            if (user.IdAccessProfile == 0)
+                return ServiceResult.Fail("Preencha o perfil do usuário!");
+            var returnPassword = this.ValitePassword(user.PasswordHash);
+            if (!string.IsNullOrEmpty(returnPassword))
+                return ServiceResult.Fail("Senha Inválida!" + returnPassword);
+
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash);
+            return _userRepository.Update(_mapper.Map<User>(user));
+        }
+
+        public ServiceResult Delete(int id)
+        {
+            return _userRepository.Delete(id);
         }
 
         public string GenerateToken(UserDto user)

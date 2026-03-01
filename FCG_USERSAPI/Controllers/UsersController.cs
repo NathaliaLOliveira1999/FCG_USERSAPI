@@ -17,11 +17,11 @@ namespace FCG_USERSAPI.Controllers
         }
 
         [Authorize]
-        [HttpGet]
+        [HttpGet("GetAll")]
         public IActionResult GetAll() => Ok(_userService.GetAll());
 
         [Authorize]
-        [HttpGet("{id}")]
+        [HttpGet("GetById")]
         public IActionResult GetById(int id)
         {
             var user = _userService.GetById(id);
@@ -31,7 +31,7 @@ namespace FCG_USERSAPI.Controllers
         }
 
         [Authorize]
-        [HttpGet("/Users/GetByUser")]
+        [HttpGet("GetByUser")]
         public IActionResult GetByUser(string userName)
         {
             var user = _userService.GetByUser(userName);
@@ -49,6 +49,28 @@ namespace FCG_USERSAPI.Controllers
             var retorno = _userService.Add(user, user.IdClient);
             if (retorno.Success)
                 return Ok(user);
+            else return BadRequest(retorno.Error);
+        }
+
+        [Authorize]
+        [HttpPut]
+        public IActionResult Update(UserDto user)
+        {
+            if (user == null)
+                return BadRequest("Preencha as informações do user!");
+            var retorno = _userService.Update(user);
+            if (retorno.Success)
+                return Ok(user);
+            else return BadRequest(retorno.Error);
+        }
+
+        [Authorize]
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var retorno = _userService.Delete(id);
+            if (retorno.Success)
+                return Ok();
             else return BadRequest(retorno.Error);
         }
     }

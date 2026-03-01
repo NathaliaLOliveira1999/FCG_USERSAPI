@@ -24,5 +24,18 @@ namespace FCG_USERSAPI.Models
         public DateTime CreatedAt { get; set; }
         [Column("IDACCESSPROFILE")]
         public int IdAccessProfile { get; set; }
+
+        [Column("DTLASTUPDATE")]
+        [Required]
+        public DateTime DtLastUpdate { get; set; }
+
+        [Column("IDUSERLASTUPDATE")]
+        [Required]
+        public int IdUserLastUpdate { get; set; }
+
+        [Column("ISACTIVE")]
+        [Required]
+        public bool IsActive { get; set; }
+        
     }
 }

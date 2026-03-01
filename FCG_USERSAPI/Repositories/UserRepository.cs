@@ -42,5 +42,50 @@ namespace FCG_USERSAPI.Repositories
                 return ServiceResult.Fail("Erro ao inserir usuário: " + ex.Message);
             }
         }
+
+        public ServiceResult Update(User user)
+        {
+            try
+            {
+                var userUpd = _context.Users.Find(user.IdUser);
+                if (userUpd == null)
+                {
+                    return ServiceResult.Fail("Usuario não identificado não encontrado!");
+                }
+                userUpd.IdClient = user.IdClient;
+                userUpd.UserName = user.UserName; 
+                userUpd.PasswordHash = user.PasswordHash; 
+                userUpd.IdAccessProfile = user.IdAccessProfile;
+                userUpd.DtLastUpdate = DateTime.Now;
+                userUpd.IdUserLastUpdate = user.IdUserLastUpdate;
+
+                _context.Users.Update(userUpd);
+                _context.SaveChanges();
+                return ServiceResult.Ok();
+            }
+            catch (Exception ex)
+            {
+                return ServiceResult.Fail("Erro ao atualizar usuario: " + ex.Message);
+            }
+        }
+
+        public ServiceResult Delete(int id)
+        {
+            try
+            {
+                var user = _context.Users.FirstOrDefault(x => x.IdUser == id);
+                if (user == null)
+                {
+                    return ServiceResult.Fail("user não identificado não encontrado!");
+                }
+                _context.Users.Remove(user);
+                _context.SaveChanges();
+                return ServiceResult.Ok();
+            }
+            catch (Exception ex)
+            {
+                return ServiceResult.Fail("Erro ao remover usuario: " + ex.Message);
+            }
+        }
     }
 }

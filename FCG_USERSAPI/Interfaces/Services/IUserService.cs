@@ -11,5 +11,7 @@ namespace FCG_USERSAPI.Interfaces.Services
         List<UserDto> GetListByUser(string user);
         ServiceResult Add(UserDto user, int? idCliente);
         string GenerateToken(UserDto user);
+        ServiceResult Update(UserDto user);
+        ServiceResult Delete(int id);
     }
 }

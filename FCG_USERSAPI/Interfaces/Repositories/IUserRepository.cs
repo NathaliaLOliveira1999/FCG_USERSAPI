@@ -1,4 +1,5 @@
 ﻿using FCG_USERSAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FCG_USERSAPI.Interfaces.Repositories
 {
@@ -9,5 +10,7 @@ namespace FCG_USERSAPI.Interfaces.Repositories
         User? GetByUser(string user);
         IEnumerable<User> GetListByUser(string user);
         ServiceResult Add(User user, int? idCliente);
+        ServiceResult Update(User user);
+        ServiceResult Delete(int id);
     }
 }

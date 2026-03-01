@@ -6,5 +6,6 @@
         public string PasswordHash { get; set; }
         public int IdAccessProfile { get; set; }
         public int? IdClient { get; set; }
+        public bool IsActive { get; set; }
     }
 }
