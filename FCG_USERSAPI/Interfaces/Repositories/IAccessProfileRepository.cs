@@ -8,5 +8,7 @@ namespace FCG_USERSAPI.Interfaces.Repositories
 
         AccessProfile? GetById(int id);
         ServiceResult Add(AccessProfile profile);
+        ServiceResult Update(AccessProfile profile);
+        ServiceResult Delete(int id);
     }
 }

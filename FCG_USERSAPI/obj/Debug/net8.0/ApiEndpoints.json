@@ -1,47 +1,5 @@
 [
   {
-    "ContainingType": "FCG_USERSAPI.Controllers.AccessProfileController",
-    "Method": "GetAll",
-    "RelativePath": "api/AccessProfile",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FCG_USERSAPI.Controllers.AccessProfileController",
-    "Method": "Create",
-    "RelativePath": "api/AccessProfile",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "accessProfile",
-        "Type": "FCG_USERSAPI.Models.DTO.AccessProfileDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FCG_USERSAPI.Controllers.AccessProfileController",
-    "Method": "GetById",
-    "RelativePath": "api/AccessProfile/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "FCG_USERSAPI.Controllers.ClientController",
     "Method": "GetAll",
     "RelativePath": "api/Client",
@@ -152,6 +110,64 @@
       {
         "Name": "userName",
         "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FCG_USERSAPI.Controllers.AccessProfileController",
+    "Method": "Create",
+    "RelativePath": "UsersAPI/AccessProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessProfile",
+        "Type": "FCG_USERSAPI.Models.DTO.AccessProfileDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FCG_USERSAPI.Controllers.AccessProfileController",
+    "Method": "Update",
+    "RelativePath": "UsersAPI/AccessProfile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accessProfile",
+        "Type": "FCG_USERSAPI.Models.DTO.AccessProfileDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FCG_USERSAPI.Controllers.AccessProfileController",
+    "Method": "GetAll",
+    "RelativePath": "UsersAPI/AccessProfile/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FCG_USERSAPI.Controllers.AccessProfileController",
+    "Method": "GetById",
+    "RelativePath": "UsersAPI/AccessProfile/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],

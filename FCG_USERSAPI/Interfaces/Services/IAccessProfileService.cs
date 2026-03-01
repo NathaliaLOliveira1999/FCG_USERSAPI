@@ -8,5 +8,7 @@ namespace FCG_USERSAPI.Interfaces.Services
         IEnumerable<AccessProfile> GetAll();
         AccessProfileDto? GetById(int id);
         ServiceResult Add(AccessProfileDto accessProfile);
+        ServiceResult Update(AccessProfileDto accessProfile);
+        ServiceResult Delete(int id);
     }
 }

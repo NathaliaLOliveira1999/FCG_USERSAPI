@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FCG_USERSAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+364479106f55e00f1bf72c35f91bb039bb89a5e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ae9f8fd726dcdcb9651b3ab429ceb804e2f39d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("FCG_USERSAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FCG_USERSAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

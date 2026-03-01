@@ -66,6 +66,14 @@ namespace FCG_USERSAPI.Services
                 retorno += "E-mail inválido.";
             return retorno;
         }
+        public ServiceResult Update(ClientDto client)
+        {
+            return _clientRepository.Update(_mapper.Map<Client>(client));
+        }
 
+        public ServiceResult Delete(int id)
+        {
+            return _clientRepository.Delete(id);
+        }
     }
 }

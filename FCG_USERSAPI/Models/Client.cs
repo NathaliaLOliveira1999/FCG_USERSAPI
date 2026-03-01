@@ -17,5 +17,13 @@ namespace FCG_USERSAPI.Models
         public string Email { get; set; }
         [Column("TELEFONE")]
         public string Telefone { get; set; }
+
+        [Column("DTLASTUPDATE")]
+        [Required]
+        public DateTime DtLastUpdate { get; set; }
+
+        [Column("IDUSERLASTUPDATE")]
+        [Required]
+        public int IdUserLastUpdate { get; set; }
     }
 }

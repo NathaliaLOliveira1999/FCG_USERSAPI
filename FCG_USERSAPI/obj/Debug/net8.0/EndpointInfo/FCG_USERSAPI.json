@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/AccessProfile": {
+    "/UsersAPI/AccessProfile/GetAll": {
       "get": {
         "tags": [
           "AccessProfile"
@@ -15,7 +15,31 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/UsersAPI/AccessProfile/GetById": {
+      "get": {
+        "tags": [
+          "AccessProfile"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/UsersAPI/AccessProfile": {
       "post": {
         "tags": [
           "AccessProfile"
@@ -44,24 +68,30 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api/AccessProfile/{id}": {
-      "get": {
+      },
+      "put": {
         "tags": [
           "AccessProfile"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccessProfileDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccessProfileDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccessProfileDto"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK"

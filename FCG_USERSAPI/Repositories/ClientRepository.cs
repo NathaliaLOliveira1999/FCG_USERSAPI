@@ -37,5 +37,51 @@ namespace FCG_USERSAPI.Repositories
                 return ServiceResult.Fail("Erro ao inserir cliente: " + ex.Message);
             }
         }
+
+        public ServiceResult Update(Client client)
+        {
+            try
+            {
+                var clientUpd = _context.Clients.Find(client.IdClient);
+                if (clientUpd == null)
+                {
+                    return ServiceResult.Fail("Cliente não identificado não encontrado!");
+                }
+
+
+                clientUpd.Name = client.Name;
+                clientUpd.Email = client.Email; 
+                clientUpd.Telefone = client.Telefone;
+                clientUpd.DtLastUpdate = DateTime.Now;
+                clientUpd.IdUserLastUpdate = client.IdUserLastUpdate;
+
+                _context.Clients.Update(clientUpd);
+                _context.SaveChanges();
+                return ServiceResult.Ok();
+            }
+            catch (Exception ex)
+            {
+                return ServiceResult.Fail("Erro ao atualizar cliente: " + ex.Message);
+            }
+        }
+
+        public ServiceResult Delete(int id)
+        {
+            try
+            {
+                var cliente = _context.Clients.FirstOrDefault(x => x.IdClient == id);
+                if (cliente == null)
+                {
+                    return ServiceResult.Fail("Cliente não identificado não encontrado!");
+                }
+                _context.Clients.Remove(cliente);
+                _context.SaveChanges();
+                return ServiceResult.Ok();
+            }
+            catch (Exception ex)
+            {
+                return ServiceResult.Fail("Erro ao remover cliente: " + ex.Message);
+            }
+        }
     }
 }

@@ -8,5 +8,7 @@ namespace FCG_USERSAPI.Interfaces.Repositories
         Client? GetById(int id);
         ServiceResult Add(Client client);
         IEnumerable<Client> GetListByEmail(string email);
+        ServiceResult Update(Client client);
+        ServiceResult Delete(int id);
     }
 }

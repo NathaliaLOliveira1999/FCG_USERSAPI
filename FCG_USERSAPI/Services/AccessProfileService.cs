@@ -31,9 +31,6 @@ namespace FCG_USERSAPI.Services
         {
             try
             {
-                //if (string.IsNullOrEmpty(client.Name))
-                //    return ServiceResult.Fail("Preencha o nome!");
-                //client.Email = client.Email.Trim();
                 var insertedAccessProfile = _profileRepository.Add(_mapper.Map<AccessProfile>(accessProfile));
                 if (!insertedAccessProfile.Success)
                     return ServiceResult.Fail(insertedAccessProfile.Error ?? "Erro ao inserir access profile.");
@@ -43,6 +40,16 @@ namespace FCG_USERSAPI.Services
             {
                 return ServiceResult.Fail("Erro ao inserir Access Profile: " + ex.Message);
             }
+        }
+
+        public ServiceResult Update(AccessProfileDto accessProfile)
+        {
+            return _profileRepository.Update(_mapper.Map<AccessProfile>(accessProfile));
+        }
+
+        public ServiceResult Delete(int id)
+        {
+            return _profileRepository.Delete(id);
         }
     }
 }

@@ -8,5 +8,7 @@ namespace FCG_USERSAPI.Interfaces.Services
         IEnumerable<Client> GetAll();
         ClientDto? GetById(int id);
         ServiceResult Add(ClientDto client);
+        ServiceResult Update(ClientDto client);
+        public ServiceResult Delete(int id);
     }
 }
