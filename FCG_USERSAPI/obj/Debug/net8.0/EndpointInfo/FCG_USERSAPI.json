@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/UsersAPI/AccessProfile/GetAll": {
+    "/AccessProfile/GetAll": {
       "get": {
         "tags": [
           "AccessProfile"
@@ -17,7 +17,7 @@
         }
       }
     },
-    "/UsersAPI/AccessProfile/GetById": {
+    "/AccessProfile/GetById": {
       "get": {
         "tags": [
           "AccessProfile"
@@ -39,7 +39,7 @@
         }
       }
     },
-    "/UsersAPI/AccessProfile": {
+    "/AccessProfile": {
       "post": {
         "tags": [
           "AccessProfile"
@@ -150,7 +150,7 @@
         }
       }
     },
-    "/api/Client/GetAll": {
+    "/Client/GetAll": {
       "get": {
         "tags": [
           "Client"
@@ -162,7 +162,7 @@
         }
       }
     },
-    "/api/Client/GetById": {
+    "/Client/GetById": {
       "get": {
         "tags": [
           "Client"
@@ -184,7 +184,7 @@
         }
       }
     },
-    "/api/Client": {
+    "/Client": {
       "post": {
         "tags": [
           "Client"
@@ -416,14 +416,6 @@
           "description": {
             "type": "string",
             "nullable": true
-          },
-          "dtLastUpdate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "idUserLastUpdate": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false

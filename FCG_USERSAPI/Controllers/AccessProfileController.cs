@@ -5,8 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FCG_USERSAPI.Controllers
 {
+    [Authorize]
     [ApiController]
-    [Route("UsersAPI/[controller]")]
+    [Route("[controller]")]
     public class AccessProfileController : ControllerBase
     {
         private readonly IAccessProfileService _accessProfileService;
@@ -16,11 +17,9 @@ namespace FCG_USERSAPI.Controllers
             _accessProfileService = accessProfileService;
         }
 
-        [Authorize]
         [HttpGet("GetAll")]
         public IActionResult GetAll() => Ok(_accessProfileService.GetAll());
 
-        [Authorize]
         [HttpGet("GetById")]
         public IActionResult GetById(int id)
         {
@@ -30,7 +29,6 @@ namespace FCG_USERSAPI.Controllers
             return Ok(client);
         }
 
-        [Authorize]
         [HttpPost]
         public IActionResult Create(AccessProfileDto accessProfile)
         {
@@ -42,7 +40,6 @@ namespace FCG_USERSAPI.Controllers
             else return BadRequest(retorno.Error);
         }
 
-        [Authorize]
         [HttpPut]
         public IActionResult Update(AccessProfileDto accessProfile)
         {
@@ -54,7 +51,6 @@ namespace FCG_USERSAPI.Controllers
             else return BadRequest(retorno.Error);
         }
 
-        [Authorize]
         [HttpDelete]
         public IActionResult Delete(int id)
         {

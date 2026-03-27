@@ -6,8 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FCG_USERSAPI.Controllers
 {
+    [Authorize]
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class ClientController : ControllerBase
     {
         private readonly IClientService _clientService;
@@ -17,11 +18,9 @@ namespace FCG_USERSAPI.Controllers
             _clientService = clientService;
         }
 
-        [Authorize]
         [HttpGet("GetAll")]
         public IActionResult GetAll() => Ok(_clientService.GetAll());
 
-        [Authorize]
         [HttpGet("GetById")]
         public IActionResult GetById(int id)
         {
@@ -31,7 +30,6 @@ namespace FCG_USERSAPI.Controllers
             return Ok(client);
         }
 
-        [Authorize]
         [HttpPost]
         public IActionResult Create(ClientDto client)
         {
@@ -43,7 +41,6 @@ namespace FCG_USERSAPI.Controllers
             else return BadRequest(retorno.Error);
         }
 
-        [Authorize]
         [HttpPut]
         public IActionResult Update(ClientDto client)
         {
@@ -55,7 +52,6 @@ namespace FCG_USERSAPI.Controllers
             else return BadRequest(retorno.Error);
         }
 
-        [Authorize]
         [HttpDelete]
         public IActionResult Delete(int id)
         {

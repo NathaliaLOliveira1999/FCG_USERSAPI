@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FCG_USERSAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class UsersController : ControllerBase
@@ -16,7 +17,6 @@ namespace FCG_USERSAPI.Controllers
             _userService = userService;
         }
 
-        [Authorize]
         [HttpGet("GetAll")]
         public IActionResult GetAll() => Ok(_userService.GetAll());
 
@@ -30,7 +30,6 @@ namespace FCG_USERSAPI.Controllers
             return Ok(user);
         }
 
-        [Authorize]
         [HttpGet("GetByUser")]
         public IActionResult GetByUser(string userName)
         {
@@ -40,7 +39,6 @@ namespace FCG_USERSAPI.Controllers
             return Ok(user);
         }
 
-        [Authorize]
         [HttpPost]
         public IActionResult Create(UserDto user)
         {
@@ -52,7 +50,6 @@ namespace FCG_USERSAPI.Controllers
             else return BadRequest(retorno.Error);
         }
 
-        [Authorize]
         [HttpPut]
         public IActionResult Update(UserDto user)
         {
@@ -64,7 +61,6 @@ namespace FCG_USERSAPI.Controllers
             else return BadRequest(retorno.Error);
         }
 
-        [Authorize]
         [HttpDelete]
         public IActionResult Delete(int id)
         {
